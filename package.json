@@ -1,0 +1,27 @@
+{
+    "author": "alexis.hafner@gmail.com",
+    "dependencies": {},
+    "keywords": [],
+    "name": "simply-zulu",
+    "pebble": {
+        "displayName": "Simply Zulu",
+        "enableMultiJS": true,
+        "messageKeys": [],
+        "projectType": "native",
+        "resources": {
+            "media": []
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk",
+            "diorite"
+        ],
+        "uuid": "6a224b0e-ed5e-40e0-841f-b017df5aa93f",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}
