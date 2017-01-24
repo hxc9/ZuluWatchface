@@ -28,7 +28,7 @@ static void update_time(bool withDate) {
 }
 
 static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
- update_time(false);
+  update_time(units_changed & DAY_UNIT);
 }
 
 static void battery_update_proc(Layer *layer, GContext *ctx) {
@@ -89,7 +89,7 @@ static void init() {
   });
   window_stack_push(s_main_window, true);
   
-  tick_timer_service_subscribe(MINUTE_UNIT, tick_handler);
+  tick_timer_service_subscribe(MINUTE_UNIT | DAY_UNIT, tick_handler);
   battery_state_service_subscribe(battery_callback);
   
   update_time(true);
